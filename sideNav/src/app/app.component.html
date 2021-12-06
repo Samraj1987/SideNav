@@ -1,0 +1,113 @@
+<nav class="sideMenu" [ngClass]="{ hide: isMenuHide }">
+  <div class="logo">
+    <a href="#"><img src="" /></a>
+    <span [ngClass]="{ shrink: isMenuHide }">NW</span>
+  </div>
+
+  <ul>
+    <li class="menu-item-parent">
+      <a
+        href="#"
+        class="menu-item"
+        [ngClass]="{ shrink: isMenuHide }"
+        (click)="showHideSubmenu($event)"
+        data-dropdown-button
+      >
+        <i class="fa fa-home"></i>
+        <span class="menu-item-desc">
+          Home
+          <span class="menu-item-drilldown" data-dropdown-toggle>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </span>
+        </span>
+      </a>
+      <ul class="sub-menu">
+        <li>
+          <a href="#" class="sub-menu-item">
+            <i class="fa fa-home"></i>
+            <span>Home sub menu</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sub-menu-item">
+            <i class="fa fa-home"></i>
+            <span>Home sub menu</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sub-menu-item">
+            <i class="fa fa-home"></i>
+            <span>Home sub menu</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#" class="menu-item" [ngClass]="{ shrink: isMenuHide }">
+        <i class="fa fa-home"></i>
+        <span class="menu-item-desc"> Home 1 </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="header">
+  <div class="menuToggle" (click)="moveSideMenu()">
+    <i class="fa fa-bars"></i><a href="#"></a>
+  </div>
+  <div class="header-nav">
+    <span>Hello</span>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab esse
+          consequatur voluptatum iste debitis corporis! Obcaecati, consectetur.
+          Ipsum modi, quidem aliquid aut velit iste veritatis quas! Eveniet
+          voluptatem exercitationem sint maiores placeat tempore excepturi ea
+          cumque aliquam laboriosam reiciendis, amet, labore a pariatur.
+          Molestias nisi sit perspiciatis rerum placeat libero dignissimos? Enim
+          possimus cumque eveniet molestias eum vel accusantium reprehenderit
+          praesentium temporibus aperiam nulla asperiores deleniti soluta eaque
+          quaerat, autem eius impedit provident natus incidunt, consequatur id
+          iusto sapiente? Possimus repellat, voluptate vitae, quasi nulla ab
+          necessitatibus qui nemo reprehenderit itaque velit obcaecati et, quam
+          accusantium soluta omnis nostrum quo?
+        </p>
+      </div>
+      <div class="col">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sed!
+          Vitae, vel est. Quasi repellendus sequi nesciunt delectus totam, neque
+          modi accusamus! Tenetur earum ut excepturi soluta sint quisquam odio,
+          accusamus facere molestias consequatur? Iusto in quia totam sint aut
+          tempora, aspernatur dolores eaque iure obcaecati quis. Id rerum vitae
+          magni cum ipsum. Consequatur minus assumenda consequuntur esse iusto
+          quisquam exercitationem repellat, ipsam in dolores distinctio illum
+          alias obcaecati accusantium mollitia aspernatur repellendus rerum enim
+          praesentium architecto asperiores atque velit! Odit velit cum
+          exercitationem praesentium excepturi alias quod nostrum inventore ipsa
+          distinctio perferendis perspiciatis fuga reprehenderit mollitia
+          ducimus incidunt suscipit officiis quibusdam illo voluptatem quas,
+          tempora dolores facere fugiat? Eaque quibusdam dolorum laudantium quis
+          necessitatibus est cum incidunt sed nisi officia, porro maiores
+          impedit beatae officiis facere unde omnis! Enim hic officia modi id,
+          pariatur quidem sed iure aperiam eum, sint possimus quo qui temporibus
+          corporis illum corrupti? Doloribus eos assumenda inventore vero qui
+          ullam, reiciendis ad explicabo molestiae? Consectetur ipsam autem
+          suscipit excepturi optio rerum nobis maxime quasi quibusdam laboriosam
+          tenetur nihil earum atque, dicta odit harum perferendis quo
+          dignissimos totam possimus nemo minus eum alias modi. Autem odio fuga
+          illum accusamus amet dolores aut eligendi exercitationem praesentium
+          id.
+        </p>
+      </div>
+    </div>
+    <div class="class"></div>
+    <div class="class"></div>
+  </div>
+</div>
