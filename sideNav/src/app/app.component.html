@@ -11,6 +11,7 @@
         class="menu-item"
         [ngClass]="{ shrink: isMenuHide }"
         (click)="showHideSubmenu($event)"
+        (mouseenter)="showShrinkSubMenu($event)"
         data-dropdown-button
       >
         <i class="fa fa-home"></i>
@@ -21,7 +22,7 @@
           </span>
         </span>
       </a>
-      <ul class="sub-menu">
+      <ul class="sub-menu" (mouseleave)="hideShrinkSubMenu($event)">
         <li>
           <a href="#" class="sub-menu-item">
             <i class="fa fa-home"></i>
